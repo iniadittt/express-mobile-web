@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="w-full h-screen">
+        <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-20 bg-white shadow-[0_-4px_6px_-1px_rgba(100,100,100,0.1)]">
+            <div id="tabs" class="flex justify-between">
+                <a href="/" class="w-full focus:text-slate-800 hover:font-semibold text-slate-900 font-extrabold justify-center inline-block text-center pt-2 pb-1">
+                    <img src="../assets/img/home.png" alt="Beranda" width="28" viewBox="0 0 42 42" class="inline-block mb-1">
+                    <span class="tab tab-home block text-xs">Beranda</span>
+                </a>
+                <a href="/chat" class="w-full focus:text-slate-800 hover:font-bold justify-center inline-block text-center pt-2 pb-1">
+                    <img src="../assets/img/chat.png" alt="Beranda" width="28" viewBox="0 0 42 42" class="inline-block mb-1">
+                    <span class="tab tab-kategori block text-xs">Chat</span>
+                </a>
+                <a href="/notifikasi" class="w-full focus:text-slate-800 hover:font-bold justify-center inline-block text-center pt-2 pb-1">
+                    <img src="../assets/img/notifikasi.png" alt="Beranda" width="28" viewBox="0 0 42 42" class="inline-block mb-1">
+                    <span class="tab tab-explore block text-xs">Notifikasi</span>
+                </a>
+                <a href="/akun" class="w-full focus:text-slate-800 hover:font-bold justify-center inline-block text-center pt-2 pb-1">
+                    <img src="../assets/img/person.png" alt="Beranda" width="28" viewBox="0 0 42 42" class="inline-block mb-1">
+                    <span class="tab tab-whishlist block text-xs">Akun</span>
+                </a>
+            </div>
+        </section>
+        <div class="block p-4" id="home">
+            <div class="flex bg-slate-50 rounded-xl px-5 py-2">
+                <div class="w-3/12">
+                    <img src="../assets/img/stars.png" alt="Stars" width="64">
+                </div>
+                <div class="w-9/12 px-2">
+                    <p class="text-lg font-bold pt-1 pb-2">
+                        <%= name %>
+                    </p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                        <div class="bg-[#FE0000] h-2.5 rounded-full py-1" style="width: <%= semester %>%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block px-4" id="about">
+            <p class="font-bold text-lg">Universitas Muhammadiyah Cirebon</p>
+            <p class="pt-1 pb-3 text-xs">Jl. Tuparev No.70, Kedungjaya, Kec. Kedawung, Kabupaten Cirebon, Jawa Barat 45153</p>
+            <ul class="flex overflow-x-auto gap-3 snap-x snap-mandatory before:shrink-0 before:w-[30vh] after:shrink-0 after:w-[30vh] px-6">
+                <li class="shrink-0 snap-start w-full">
+                    <img src="../assets/img/umc.jpg" alt="Gambar1" class="rounded-xl" />
+                </li>
+                <li class="shrink-0 snap-center w-full">
+                    <img src="../assets/img/umc.jpg" alt="Gambar2" class="rounded-xl" />
+                </li>
+                <li class="shrink-0 snap-center w-full">
+                    <img src="../assets/img/umc.jpg" alt="Gambar3" class="rounded-xl" />
+                </li>
+                <li class="shrink-0 snap-center w-full">
+                    <img src="../assets/img/umc.jpg" alt="Gambar4" class="rounded-xl" />
+                </li>
+                <li class="shrink-0 snap-center w-full">
+                    <img src="../assets/img/umc.jpg" alt="Gambar5" class="rounded-xl" />
+                </li>
+                <li class="shrink-0 snap-end w-full">
+                    <img src="../assets/img/umc.jpg" alt="Gambar6" class="rounded-xl" />
+                </li>
+            </ul>
+        </div>
+        <div class="block px-4 pt-2" id="menu-mahasiswa">
+            <p class="font-bold text-lg pt-3">Menu Mahasiswa</p>
+            <div class="grid grid-cols-4 gap-3 px-2 pt-5">
+                <div class="col bg-blue-400 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/krs.png" alt="KRS" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">KRS</p>
+                </div>
+                <div class="col bg-yellow-300 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/tagihan.png" alt="Tagihan" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">Tagihan</p>
+                </div>
+                <div class="col bg-gray-200 bg-opacity-30 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/nilai.png" alt="Histori Nilai" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">Histori Nilai</p>
+                </div>
+                <div class="col bg-slate-400 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/biodata.png" alt="Biodata" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">Biodata</p>
+                </div>
+                <div class="col bg-green-400 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/histori.png" alt="Histori Tagihan" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">Transfer</p>
+                </div>
+                <div class="col bg-purple-500 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/va.png" alt="Virtual Account" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">VA</p>
+                </div>
+                <div class="col bg-red-400 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/uts.png" alt="UTS" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">UTS Online</p>
+                </div>
+                <div class="col bg-orange-400 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/uas.png" alt="UAS" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">UAS Online</p>
+                </div>
+                <div class="col bg-rose-500 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/key.png" alt="Ganti Password" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">Ubah Pass</p>
+                </div>
+                <div class="col bg-blue-700 bg-opacity-20 rounded-xl pt-3 pb-1">
+                    <img src="../assets/img/card.png" alt="Kartu UAS" width="50" class="mx-auto">
+                    <p class="text-center text-xs font-bold mt-1">Kartu UAS</p>
+                </div>
+            </div>
+        </div>
+        <div class="block px-4 pt-5" id="trending">
+            <p class="font-bold text-lg mb-3">Trending UMC</p>
+            <div class="block bg-gray-100 bg-opacity-25 rounded-xl shadow-lg mb-5">
+                <img src="../assets/img/umc.jpg" alt="Trending1" class="rounded-t-xl" />
+                <p class="font-normal text-sm p-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam iure sapiente ratione?
+                </p>
+            </div>
+            <div class="block bg-gray-100 bg-opacity-25 rounded-xl shadow-lg mb-5">
+                <img src="../assets/img/umc.jpg" alt="Trending2" class="rounded-t-xl" />
+                <p class="font-normal text-sm p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam exercitationem doloribus voluptate.
+                </p>
+            </div>
+        </div>
+        <div class="block px-4 pt-5" id="kegiatan">
+            <p class="font-bold text-lg mb-3">Kegiatan Mahasiswa</p>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="col bg-gray-100 bg-opacity-25 rounded-xl shadow-lg">
+                    <img src="../assets/img/umc.jpg" alt="Kegiatan1" class="rounded-t-xl">
+                    <p class="text-xs p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum soluta aspernatur aliquid.</p>
+                </div>
+                <div class="col bg-gray-100 bg-opacity-25 rounded-xl shadow-lg">
+                    <img src="../assets/img/umc.jpg" alt="Kegiatan1" class="rounded-t-xl">
+                    <p class="text-xs p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nisi officiis dolorum veniam possimus rerum voluptates.</p>
+                </div>
+                <div class="col bg-gray-100 bg-opacity-25 rounded-xl shadow-lg">
+                    <img src="../assets/img/umc.jpg" alt="Kegiatan1" class="rounded-t-xl">
+                    <p class="text-xs p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo deleniti modi eius cumque minus et!</p>
+                </div>
+                <div class="col bg-gray-100 bg-opacity-25 rounded-xl shadow-lg">
+                    <img src="../assets/img/umc.jpg" alt="Kegiatan1" class="rounded-t-xl">
+                    <p class="text-xs p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col bg-gray-100 bg-opacity-25 rounded-xl shadow-lg">
+                    <img src="../assets/img/umc.jpg" alt="Kegiatan1" class="rounded-t-xl">
+                    <p class="text-xs p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur magnam sint nesciunt veritatis.</p>
+                </div>
+                <div class="col bg-gray-100 bg-opacity-25 rounded-xl shadow-lg">
+                    <img src="../assets/img/umc.jpg" alt="Kegiatan1" class="rounded-t-xl">
+                    <p class="text-xs p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste autem et facilis. Numquam?</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</body>
+
+</html>
